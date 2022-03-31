@@ -14,14 +14,11 @@ class LinkContainer extends React.Component {
   removeLink = (index) => {
     let updatedArray = this.state.favLinks.filter(item => item !== this.state.favLinks[index])
     this.setState({favLinks: updatedArray})
-    console.log(this.state.favLinks)
   }
 
   handleSubmit = (favLink) => {
             //TODO - Create logic to setState and add new favLink to favLinks array in state
     this.setState({ favLinks: [...this.state.favLinks, favLink]})
-    console.log(this.state.favLinks)
-            //might need to update this step 17
   }
 
   render() {
